@@ -5,7 +5,10 @@ import('./models/post.model.js');
 import('./models/comment.model.js');
 import('./models/associations.js');
 
-const sequelize = new Sequelize("mysql://ujdvfvi9t4ktcnl0:halIXTOTSmzP6pu3Qc4B@bqr6vdntlvbdwhfdskbf-mysql.services.clever-cloud.com:3306/bqr6vdntlvbdwhfdskbf")
+const sequelize = new Sequelize('offline','root','',{
+    dialect:'mysql',
+    
+})
 
 const authentication = async () => {
     
